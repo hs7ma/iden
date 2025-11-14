@@ -1,0 +1,41 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "api/**/*.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/(.*)",
+      "dest": "/api/$1"
+    },
+    {
+      "src": "/recognize",
+      "dest": "/api/recognize.js"
+    },
+    {
+      "src": "/latest",
+      "dest": "/api/latest.js"
+    },
+    {
+      "src": "/test",
+      "dest": "/api/test.js"
+    },
+    {
+      "src": "/health",
+      "dest": "/api/health.js"
+    }
+  ],
+  "functions": {
+    "api/recognize.js": {
+      "maxDuration": 10,
+      "memory": 3008
+    },
+    "api/latest.js": {
+      "maxDuration": 5
+    }
+  }
+}
+

@@ -1,0 +1,30 @@
+# Backup files
+*.backup
+server.js.backup
+esp32_cam_code.ino.backup
+
+# Arduino files
+*.ino
+*.ino.backup
+
+# Uploads
+uploads/
+*.jpg
+*.jpeg
+*.png
+
+# Documentation
+README_GLITCH.md
+README_VERCEL.md
+
+# Batch files
+*.bat
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
