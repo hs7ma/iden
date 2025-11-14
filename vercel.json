@@ -1,19 +1,4 @@
 {
-  "functions": {
-    "api/recognize.js": {
-      "maxDuration": 10,
-      "memory": 2048
-    },
-    "api/latest.js": {
-      "maxDuration": 5
-    },
-    "api/test.js": {
-      "maxDuration": 5
-    },
-    "api/health.js": {
-      "maxDuration": 5
-    }
-  },
   "rewrites": [
     {
       "source": "/recognize",
